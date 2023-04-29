@@ -12,6 +12,7 @@
   {% endfor %}
 </ul>
 <form method="POST">
+  <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
   <textarea name="note" id="note" class="form-control"></textarea>
   <br />
   <div align="center">

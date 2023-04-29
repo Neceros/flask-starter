@@ -1,16 +1,40 @@
-# Flask Web App Tutorial
+# Flask Starter Template
 
+This flask starter template includes everything you need to start your own app including auth, database, and security, to get up and started quickly. 
 ## Setup & Installation
 
-Make sure you have the latest version of Python installed.
+Make sure you have the latest version of Python installed. Built in 3.11.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Neceros/flask-starter.git
+cd flask-starter
 ```
+
+Set up your virtual environment. It's easy and you should do it for every project, 
+as it will save you many headaches later on from a bloated python.
+
+**Make sure the virtual environment is outside of your project folder**:
+
+```bash
+python3 -m venv /flask-apps/venv/
+source /flask-apps/venv/bin/activate
+```
+The first line creates the environment and the second line activates it. 
+If you are using Windows you can put it anywhere like: `python3 -m venv c:\flask-apps\venv\`
+
+
+Now that you are inside the project folder and the virtual environment, install the required
+packages listed in the `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+You are ready to begin. Everything should be setup and ready to run right this moment,
+even if there's nothing to see.
+
+#### TODO:
+* Add database models: products, posts, tracks, downloads, etc
 
 ## Running The App
 
@@ -20,4 +44,4 @@ python main.py
 
 ## Viewing The App
 
-Go to `http://127.0.0.1:5000`
+**Go to** [http://127.0.0.1:5000](http://127.0.0.1:5000)
