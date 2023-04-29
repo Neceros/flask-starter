@@ -11,6 +11,16 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    app.config.update(
+        SESSION_COOKIE_SECURE=True,
+        SESSION_COOKIE_HTTPONLY=True,
+        SESSION_COOKIE_SAMESITE='Lax',
+    )
+
+    # We can set secure cookies in response
+    # response.set_cookie('key', 'value', secure=True, httponly=True, samesite='Lax')
+    #
+    
     db.init_app(app)
 
     from .views import views
