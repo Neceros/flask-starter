@@ -36,8 +36,7 @@ packages listed in the `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
-You are ready to begin. Everything should be setup and ready to run right this moment,
-even if there's nothing to see.
+You are ready to begin. Everything should be setup and ready to run right this moment. Just start adding your application code!
 
 #### TODO:
 * Add database models: products, posts, tracks, downloads, etc
