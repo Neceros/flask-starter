@@ -26,7 +26,7 @@ The first line creates the environment and the second line activates it.
 
 If you are using Windows you can put it anywhere like: `python3 -m venv c:\flask-apps\venv\flask-starter`
 
-Please see (https://docs.python.org/3/library/venv.html)[https://docs.python.org/3/library/venv.html] if you need help with venv.
+Please see [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html) if you need help with venv.
 
 
 Now that you are inside the project folder and the virtual environment, install the required
