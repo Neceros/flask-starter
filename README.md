@@ -1,6 +1,9 @@
 # Flask Starter Template
 
-This flask starter template includes everything you need to start your own app including auth, database, and security, to get up and started quickly. 
+This flask starter template includes everything you need to start your own app 
+including auth, database, and security, to get up and started quickly.
+
+###### I hope to add more, like an admin and user dashboard prebuilt in.
 ## Setup & Installation
 
 Make sure you have the latest version of Python installed. Built in 3.11.
@@ -16,11 +19,11 @@ as it will save you many headaches later on from a bloated python.
 **Make sure the virtual environment is outside of your project folder**:
 
 ```bash
-python3 -m venv /flask-apps/venv/
-source /flask-apps/venv/bin/activate
+python3 -m venv /flask-apps/venv/flask-starter
+source /flask-apps/venv/flask-starter/bin/activate
 ```
 The first line creates the environment and the second line activates it. 
-If you are using Windows you can put it anywhere like: `python3 -m venv c:\flask-apps\venv\`
+If you are using Windows you can put it anywhere like: `python3 -m venv c:\flask-apps\venv\flask-starter`
 
 
 Now that you are inside the project folder and the virtual environment, install the required
