@@ -9,7 +9,7 @@
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
     <title>
-        {% if title %}
+        {% if self.title() %}
         {% block title %}{% endblock %} - Flask Starter Template{% else %}Welcome - Flask Starter Template
         {% endif %}
     </title>
