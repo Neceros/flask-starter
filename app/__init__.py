@@ -23,6 +23,14 @@ def create_app():
 
     db.init_app(app)
 
+    # Content Security Policy
+    # Complicated topic, but this config only accepts requests from this
+    # website itself, and the others listed below. We allow these because
+    # they are our TRUSTED style sheets and script sources
+    
+    # style-src also allows inline styling, because that is pretty safe and
+    # lets you use style= attributes in HTML
+    
     csp = {
         'default-src': [
             SELF,
@@ -32,7 +40,6 @@ def create_app():
         ],
         'img-src': [
             '*',
-            "'unsafe-hashes'",
             'data:',
         ],
         'style-src': [
