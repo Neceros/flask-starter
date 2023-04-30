@@ -1,7 +1,10 @@
 # Flask Starter Template
 
 This flask starter template includes everything you need to start your own app 
-including auth, database, and security, to get up and started quickly.
+including auth, database, **and security**, to get up and started quickly.
+
+Uses CSRF tokens and CSP headers to protect your website from injection. It also
+does all of this stuff: [https://github.com/GoogleCloudPlatform/flask-talisman](https://github.com/GoogleCloudPlatform/flask-talisman)
 
 ###### I hope to add more, like an admin and user dashboard prebuilt in.
 ## Setup & Installation
@@ -13,10 +16,10 @@ git clone https://github.com/Neceros/flask-starter.git
 cd flask-starter
 ```
 
-Set up your virtual environment. It's easy and you should do it for every project, 
+Set up your virtual environment. It's easy, and you should do it for every project, 
 as it will save you many headaches later on from a bloated python.
 
-**Make sure the virtual environment is outside of your project folder**:
+**Make sure the virtual environment is outside your project folder**:
 
 ```bash
 python3 -m venv /flask-apps/venv/flask-starter
